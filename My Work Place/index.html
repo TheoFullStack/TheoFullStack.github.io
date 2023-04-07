@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b055c8baa9.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="main-section">
+  <div class="container-fluid1">
+      <div class="leftside-circle">
+      <p class="text-light fs-4">Your Result</p>
+        <div class="circular_div bg-light">
+          <p style="color:#7e74f1; font-weight: bold;">
+          <span class="score text-white display-3">76</span><br>
+          of 100
+          </p>
+        </div>
+      </div>
+        <div class="result-holder">
+          <p class="Great fs-1 text-white">Great</p>
+          <p class=" fs-6" style="color:#8d8ae6; font-weight: bold;">
+          You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+    </div>
+  <div class="container-fluid2">
+    <p class=" summary display-6">Summary</p>
+      <div class="mother">
+        <div class="child_background"></div>
+        <div><p class="child_text fw-bold" style="color:hsl(0, 100%, 67%);"><i class="fa-solid fa-bolt" style="color:hsl(0, 100%, 67%);"></i>  Reaction</p> <p class=" child_results ms-auto text-secondary"><span class="fs-4 text-black">80</span>/100</p> </div>
+      </div>
+      <div class="mother">
+        <div class="child_background" style="background: hsl(39, 100%, 56%);"></div>
+        <div><p class="child_text fw-bold"style="color: hsl(39, 100%, 56%);"><i class="fa-solid fa-brain" style="color: hsl(39, 100%, 56%);"></i>  Memory</p> <p class=" child_results ms-auto text-secondary"><span class="fs-4 text-black">92</span>/100</p> </div>
+      </div>
+      <div class="mother">
+        <div class="child_background" style="background: hsl(166, 100%, 37%);"></div>
+        <div><p class="child_text fw-bold" style="color:hsl(166, 100%, 37%)"><i class="fa-solid fa-message" style="color:hsl(166, 100%, 37%);"></i>  Verbal</p> <p class=" child_results ms-auto text-secondary"><span class="fs-4 text-black">61</span>/100</p> </div>
+      </div>
+      <div class="mother">
+        <div class="child_background" style="background:hsl(234, 85%, 45%);"></div>
+        <div><p class="child_text fw-bold" style="color: hsl(234, 85%, 45%);"><i class="fa-solid fa-eye" style="color:hsl(234, 85%, 45%);"></i>  Visual</p> <p class=" child_results ms-auto text-secondary"><span class="fs-4 text-black">72</span>/100</p> </div>
+      </div>
+      <button type="button" class="btn btn-lg btn-primary"> Continute</button>
+  </div>
+
+
+  </div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
