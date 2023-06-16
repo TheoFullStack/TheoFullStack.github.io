@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 30px 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    border-top: 5px solid rgb(240,46, 174, 0.3);
+    border-right:5px solid rgb(240,46, 174, 0.3);
+    width:900px;
+    height: 800px;
+    position:relative;
+    border-radius: 10px / 30px;
+    border-bottom-right-radius: 200px;
+
+}
+
+.box{
+    flex: 0 0 calc(33.33%);
+}
+
+.input{
+    position:absolute;
+    top: 60px;
+    border-radius: 10px ;
+    height: 80px;
+    width: 150px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+input::placeholder{
+    text-align: center;
+}
+input:focus{
+    border-color: gray;
+}
+.inputContainer{
+    height: 0px;
+    width:0px;
+}
+
+.hr{
+    position:absolute;
+    top: 190px;
+    z-index: 1;
+    width: 90%;}
+
+.circleButton{
+    border-radius: 50%;
+    height:80px;
+    width:80px;
+    position: absolute;
+    right: 50px;
+    top:-30px;
+    background-image: url("../assets/images/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+
+hr{
+    height:4px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    background-color:#000000 ;
+    width: 100%;
+}
+.calcArea{
+    height:500px;
+    width:500px;
+    position:absolute;
+    Left: 100px;
+    bottom: 80px;
+    text-align: center;
+    padding-top:20px;
+    visibility: hidden;
+    
+}
+
+p{
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.span{
+    color:blueviolet;
+}
+
+@media (max-width: 767px) {
+    .container{
+        width: 90%;
+        position:relative;
+    }
+    
+    .box {
+      width: 40px; /* Adjust the width as per your needs */
+      height: 20px; /* Adjust the height as per your needs */
+      margin-bottom:3px;
+
+    } 
+    .input{
+        width: 90px;
+        font-size: 20px;
+    
+  }
+
+  .calcArea{
+    height:350px;
+    width:350px;
+    position:absolute;
+    left:20px;
+    top:280px;
+    padding-top:0px;
+  }
+
+  .circleButton{
+    left: 135px;
+  }
+  .txt{
+    font-size: 65px;
+  }
+}
